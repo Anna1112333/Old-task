@@ -1,13 +1,15 @@
 ﻿#include <iostream>
-#include <clocale>
+#include <clocale>           //Не компилируется по ссылке пыталась qi сделать.
 using namespace std;
 class figure
 {
 
 	string name = "Фигура";
 protected:
-	figure(string name1)
+	
+	figure(string name1, void (*print_info)())
 	{
+		//this print_info()->print_info();
 		set_name(name1);
 	}
 	void set_name(string name1) { this->name = name1; }
@@ -18,6 +20,8 @@ protected:
 		return true;
 	}
 	bool ff; //Поле в которое записывается правильна-ли фигура.
+public:
+	virtual void print_info() { cout << "ничего\n"; };
 };
 
 class triangle : public figure
@@ -27,7 +31,7 @@ protected:
 	int A, B, C;
 	int a, b, c;
 public:
-	void print_info()
+	void print_info() override
 	{
 
 		if (ff) cout << "Правильная фигура.\n";
@@ -36,7 +40,7 @@ public:
 		cout << "Cтороны:" << "a=" << a << " b=" << b << " c=" << c << endl;
 		cout << "Углы: A=" << A << " B=" << B << " C=" << C << endl << endl;
 	}
-	triangle(string name1) : figure(name1) {  }
+	triangle(string name1) : figure(name1, print_info()) {  }
 };
 //равнобедренный
 class isosceles_triangle : public triangle
@@ -97,7 +101,7 @@ protected:
 	int a, b, c, d;
 	string name2 = "Четырёхугольник";
 public:
-	void print_info()
+	void print_info() override
 	{
 		if (ff) cout << "Правильная фигура.\n";
 		else cout << "Неправильная фигура.\n";
@@ -105,7 +109,7 @@ public:
 		cout << "Cтороны: " << "a=" << a << " b=" << b << " c=" << c << " d=" << d << endl;
 		cout << "Углы: A=" << A << " B=" << B << " C=" << C << " D=" << D << endl << endl;
 	}
-	quadrangle(string name2) : figure(name2) {}
+	quadrangle(string name2) : figure(name2, print_info()) {}
 };
 
 //прямоугольник
@@ -172,6 +176,7 @@ public:
 int main()
 {
 	setlocale(LC_ALL, "rus");
+	figure qi = isosceles_triangle();
 
 	triangle q1 = isosceles_triangle();
 	triangle q2 = equilateral_triangle();
@@ -181,6 +186,7 @@ int main()
 	quadrangle j2 = square();
 	quadrangle j3 = parallelogram();
 	quadrangle j4 = rhomb();
+	qi.print_info();
 	q1.print_info();
 	q2.print_info();
 	q3.print_info();
