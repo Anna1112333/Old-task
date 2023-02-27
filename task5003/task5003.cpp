@@ -7,7 +7,7 @@ class figure
 	string name = "Фигура";
 protected:
 	
-	figure(string name1, void (*print_info)())
+	figure(string name1)
 	{
 		//this print_info()->print_info();
 		set_name(name1);
@@ -21,7 +21,7 @@ protected:
 	}
 	bool ff; //Поле в которое записывается правильна-ли фигура.
 public:
-	virtual void print_info() { cout << "ничего\n"; };
+	virtual void print_info() {};
 };
 
 class triangle : public figure
@@ -40,7 +40,7 @@ public:
 		cout << "Cтороны:" << "a=" << a << " b=" << b << " c=" << c << endl;
 		cout << "Углы: A=" << A << " B=" << B << " C=" << C << endl << endl;
 	}
-	triangle(string name1) : figure(name1, print_info()) {  }
+	triangle(string name1) : figure(name1) {  }
 };
 //равнобедренный
 class isosceles_triangle : public triangle
@@ -109,7 +109,7 @@ public:
 		cout << "Cтороны: " << "a=" << a << " b=" << b << " c=" << c << " d=" << d << endl;
 		cout << "Углы: A=" << A << " B=" << B << " C=" << C << " D=" << D << endl << endl;
 	}
-	quadrangle(string name2) : figure(name2, print_info()) {}
+	quadrangle(string name2) : figure(name2) {}
 };
 
 //прямоугольник
@@ -176,17 +176,22 @@ public:
 int main()
 {
 	setlocale(LC_ALL, "rus");
-	figure qi = isosceles_triangle();
+	isosceles_triangle d1;
+	figure& q1 = d1;
+	equilateral_triangle d2;
+	figure& q2 =d2 ;
+	right_triangle d3;
+	figure& q3 = d3;
 
-	triangle q1 = isosceles_triangle();
-	triangle q2 = equilateral_triangle();
-	triangle q3 = right_triangle();
-
-	quadrangle j1 = rectangle();
-	quadrangle j2 = square();
-	quadrangle j3 = parallelogram();
-	quadrangle j4 = rhomb();
-	qi.print_info();
+	rectangle n1;
+	figure& j1 = n1;
+	square n2;
+	figure& j2 = n2;
+	parallelogram n3;
+	figure& j3 = n3;
+	rhomb n4;
+	figure& j4 = n4;
+	
 	q1.print_info();
 	q2.print_info();
 	q3.print_info();
