@@ -1,5 +1,7 @@
 #pragma once
-
+//#include<iostream>
+//#include"triangle.h"
+//#include"tr01.h"
 class figure
 {
 	string name = "Фигура";
