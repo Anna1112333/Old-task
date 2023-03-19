@@ -1,8 +1,7 @@
 
 #include <iostream>
 #include "figure.h"
-#include"triangle.h"
-#include"tr01.h"
+//#include"triangle.h"
 //#include "quadrangle.h"
 
 #include <iostream>
@@ -18,7 +17,7 @@ bool figure::ff_l() //Правильная фигура или нет.
 {
 	return true;
 }
-void figure::print_info() {}
+//void figure::print_info() {}
 /*
 
 class triangle : public figure

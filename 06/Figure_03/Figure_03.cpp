@@ -1,7 +1,7 @@
 ﻿
 #include "figure.h"
-#include "triangle.h"
-#include "tr01.h"
+//#include "triangle.h"
+
 //#include "quadrangle.h"
 
 #include <iostream>

@@ -1,6 +1,5 @@
  #include <iostream>
-#include "figure.h"
-#include "tr01.h"
+//#include "figure.h"
 #include"triangle.h"
 using namespace std;
 
@@ -13,4 +12,4 @@ using namespace std;
 		cout << "Cтороны:" << "a=" << a << " b=" << b << " c=" << c << endl;
 		cout << "”глы: A=" << A << " B=" << B << " C=" << C << endl << endl;
 	}
-	triangle::triangle(string name1) : figure::figure(name1) {  }
+

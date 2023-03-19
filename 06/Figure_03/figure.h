@@ -1,6 +1,6 @@
 #pragma once
 //#include<iostream>
-//#include"triangle.h"
+#include"triangle.h"
 //#include"tr01.h"
 class figure
 {
@@ -12,5 +12,5 @@ protected:
 	virtual bool ff_l(); //ѕравильна€ фигура или нет.
 	bool ff; //ѕоле в которое записываетс€ правильна-ли фигура.
 public:
-	virtual void print_info();
+	virtual void print_info() {}
 };

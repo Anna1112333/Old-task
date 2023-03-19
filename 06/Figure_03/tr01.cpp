@@ -1,6 +1,6 @@
-#include "figure.h"
+//#include "figure.h"
 #include"triangle.h"
-#include"tr01.h"
+
 //равнобедренный tr01
 //#include <iostream>
 
@@ -11,7 +11,7 @@
 		A = 41;  B = 41;  C = 98;
 		ff = ff_l();
 	}
-	bool isosceles_triangle :: ff_l() 
+	bool  isosceles_triangle::ff_l()
 	{
 		return (a == b && A == B) || (a == c && A == C) || (b == c && B == C);
 	}
