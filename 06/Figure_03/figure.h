@@ -1,10 +1,11 @@
 #pragma once
 //#include<iostream>
-#include"triangle.h"
+//#include"triangle.h"
 //#include"tr01.h"
+
 class figure
 {
-	string name = "Фигура";
+	string name;
 protected:
 	figure(string name1);
 	void set_name(string name1);

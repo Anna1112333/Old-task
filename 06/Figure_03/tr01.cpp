@@ -1,6 +1,6 @@
 //#include "figure.h"
-#include"triangle.h"
-
+#include "triangle.h"
+#include "figure.h"
 //равнобедренный tr01
 //#include <iostream>
 

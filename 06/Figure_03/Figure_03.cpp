@@ -1,9 +1,7 @@
 ﻿
 #include "figure.h"
-//#include "triangle.h"
-
+#include "triangle.h"
 //#include "quadrangle.h"
-
 #include <iostream>
 #include <clocale>           //Не компилируется по ссылке пыталась qi сделать.
 using namespace std;

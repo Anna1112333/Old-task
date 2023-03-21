@@ -4,7 +4,9 @@
 using namespace std;
 
 
-class triangle : public figure::figure
+
+
+class triangle : public figure
 {
 protected:
 	int A, B, C;
@@ -20,5 +22,5 @@ class isosceles_triangle : public triangle
 public:
 	string name1;
 	isosceles_triangle(); //:triangle(name1);
-	bool  ff_l() override;	
+	bool  figure::ff_l() override;	
 };
