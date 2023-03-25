@@ -1,11 +1,12 @@
 #pragma once
-//#include<iostream>
+#include<iostream>
 //#include"triangle.h"
-//#include"tr01.h"
+
+using namespace std;
 
 class figure
 {
-	string name;
+	string name="Фигура";
 protected:
 	figure(string name1);
 	void set_name(string name1);
@@ -13,5 +14,5 @@ protected:
 	virtual bool ff_l(); //Правильная фигура или нет.
 	bool ff; //Поле в которое записывается правильна-ли фигура.
 public:
-	virtual void print_info() {}
+	virtual void print_info();
 };

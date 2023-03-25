@@ -1,5 +1,5 @@
 ﻿
-#include "figure.h"
+//#include "figure.h"
 #include "triangle.h"
 //#include "quadrangle.h"
 #include <iostream>

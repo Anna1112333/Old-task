@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-//#include "figure.h"
+#include "figure.h"
 using namespace std;
 
 
@@ -17,10 +17,11 @@ public:
 };
 
 //tr01
+
 class isosceles_triangle : public triangle
 {
 public:
 	string name1;
 	isosceles_triangle(); //:triangle(name1);
-	bool  figure::ff_l() override;	
+	bool  ff_l() override;	
 };
