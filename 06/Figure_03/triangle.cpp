@@ -5,7 +5,6 @@ using namespace std;
 
 	void triangle::print_info() 
 	{
-
 		if (ff) cout << "Правильная фигура.\n";
 		else cout << "Неправильная фигура.\n";
 		cout << figure::get_name() << ":\n";

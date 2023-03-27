@@ -1,13 +1,11 @@
 
-#include <iostream>
 //#include "figure.h"
 #include"triangle.h"
-//#include "quadrangle.h"
-
+#include "quadrangle.h"
 #include <iostream>
 //#include <clocale>          
 using namespace std;
-//string figure::name = "Фигура";
+
 figure::figure( string name1)
 {
 	figure::set_name(name1);

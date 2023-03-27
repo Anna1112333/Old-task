@@ -141,12 +141,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Figure_03.cpp" />
+    <ClCompile Include="quadrangle.cpp" />
+    <ClCompile Include="qw02.cpp" />
     <ClCompile Include="Source_figure.cpp" />
     <ClCompile Include="tr01.cpp" />
     <ClCompile Include="triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="figure.h" />
+    <ClInclude Include="quadrangle.h" />
     <ClInclude Include="triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
