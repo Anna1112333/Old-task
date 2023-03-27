@@ -1,10 +1,7 @@
-//#include "figure.h"
 #include "triangle.h"
-//#include "figure.h"
 using namespace std;
+
 //равнобедренный tr01
-
-
 	isosceles_triangle::isosceles_triangle() :triangle("Равнобедренный треугольник")
 	{
 		a = 11;  b = 10;  c = 15;

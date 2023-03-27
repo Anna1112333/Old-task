@@ -19,7 +19,7 @@ class isosceles_triangle : public triangle
 {
 public:
 	string name1;
-	isosceles_triangle(); //:triangle(name1);
+	isosceles_triangle(); 
 	bool  ff_l() override;	
 };
 

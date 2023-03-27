@@ -1,5 +1,4 @@
  #include <iostream>
-//#include "figure.h"
 #include"triangle.h"
 using namespace std;
 
