@@ -1,4 +1,13 @@
-﻿#include "triangle.h"
+﻿#include "isosceles_triangle.h"
+#include "equilateral_triangle.h"
+#include "right_triangle.h"
+
+#include "rectangle.h"
+#include "square.h"
+#include "parallelogram.h"
+#include "rhomb.h"
+
+#include "triangle.h"
 #include "quadrangle.h"
 #include <iostream>
 #include <clocale>           //Не компилируется по ссылке пыталась qi сделать.

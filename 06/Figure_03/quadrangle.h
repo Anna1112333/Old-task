@@ -14,7 +14,7 @@ public:
 	void print_info() override;	
 	quadrangle(string name2) : figure(name2) {};
 };
-
+/*
 //прямоугольник
 class rectangle : public quadrangle
 {
@@ -43,4 +43,4 @@ class rhomb : public quadrangle
 public:
 	rhomb();
 	bool ff_l() override;
-};
+};*/

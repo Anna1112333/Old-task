@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{09332a64-3841-4b74-bc52-64545e113474}</ProjectGuid>
-    <RootNamespace>Figure03</RootNamespace>
+    <ProjectGuid>{c20e1b11-940c-4f26-8b0d-f35b57e24501}</ProjectGuid>
+    <RootNamespace>task0206new</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,25 +70,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,29 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="equilateral_triangle.cpp" />
-    <ClCompile Include="Figure_03.cpp" />
-    <ClCompile Include="isosceles_triangle.cpp" />
-    <ClCompile Include="parallelogram.cpp" />
-    <ClCompile Include="quadrangle.cpp" />
-    <ClCompile Include="rectangle.cpp" />
-    <ClCompile Include="rhomb.cpp" />
-    <ClCompile Include="right_triangle.cpp" />
-    <ClCompile Include="Source_figure.cpp" />
-    <ClCompile Include="square.cpp" />
-    <ClCompile Include="triangle.cpp" />
+    <ClCompile Include="diff.cpp" />
+    <ClCompile Include="div.cpp" />
+    <ClCompile Include="multi.cpp" />
+    <ClCompile Include="sum.cpp" />
+    <ClCompile Include="task0206new.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="equilateral_triangle.h" />
-    <ClInclude Include="figure.h" />
-    <ClInclude Include="isosceles_triangle.h" />
-    <ClInclude Include="parallelogram.h" />
-    <ClInclude Include="quadrangle.h" />
-    <ClInclude Include="rectangle.h" />
-    <ClInclude Include="rhomb.h" />
-    <ClInclude Include="right_triangle.h" />
-    <ClInclude Include="square.h" />
-    <ClInclude Include="triangle.h" />
+    <ClInclude Include="diff.h" />
+    <ClInclude Include="div.h" />
+    <ClInclude Include="multi.h" />
+    <ClInclude Include="sum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

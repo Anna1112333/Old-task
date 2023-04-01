@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "figure.h"
+//#include "isosceles_triangle.h"
 using namespace std;
 
 class triangle : public figure
@@ -14,7 +15,7 @@ public:
 };
 
 //tr01
-
+/*
 class isosceles_triangle : public triangle
 {
 public:
@@ -39,4 +40,4 @@ class right_triangle : public triangle
 public:
 	right_triangle();	
 	bool ff_l() override;	
-};
+};*/

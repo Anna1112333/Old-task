@@ -1,4 +1,4 @@
-﻿#include"Klass_header.h"
+﻿#include "Klass_counter.h"
 
 #include <iostream>
 #include <cstring>
