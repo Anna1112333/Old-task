@@ -9,8 +9,7 @@ protected:
 	figure(string name1);
 	void set_name(string name1);
 	string get_name();
-	virtual bool ff_l(); //Правильная фигура или нет.
-	bool ff; //Поле в которое записывается правильна-ли фигура.
+	virtual bool ff_l(); //Правильная фигура или нет.	
 public:
 	virtual void print_info();
 };

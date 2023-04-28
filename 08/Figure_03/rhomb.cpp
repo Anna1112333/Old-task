@@ -5,8 +5,7 @@ using namespace std;
 rhomb::rhomb() : quadrangle("Ромб")
 {
 	a = 20;  b = 20;  c = 20; d = 20;
-	A = 45;  B = 135;  C = 45; D = 135;
-	ff = ff_l();
+	A = 45;  B = 135;  C = 45; D = 135;	
 }
 bool rhomb::ff_l()
 {

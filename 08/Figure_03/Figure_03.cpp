@@ -9,6 +9,7 @@
 
 #include "triangle.h"
 #include "quadrangle.h"
+#include <stdexcept>
 #include <iostream>
 #include <clocale>           //Не компилируется по ссылке пыталась qi сделать.
 using namespace std;
@@ -30,13 +31,15 @@ int main()
 	figure& j3 = n3;
 	rhomb n4;
 	figure& j4 = n4;
-
-	q1.print_info();
-	q2.print_info();
-	q3.print_info();
-	j1.print_info();
-	j2.print_info();
-	j3.print_info();
-	j4.print_info();
+	try {
+		q1.print_info();
+		q2.print_info();
+		q3.print_info();
+		j1.print_info();
+		j2.print_info();
+		j3.print_info();
+		j4.print_info();
+	}
+	catch (...) { std::cout << "Неправильная фигура" << endl; }
 	return 0;
 }
