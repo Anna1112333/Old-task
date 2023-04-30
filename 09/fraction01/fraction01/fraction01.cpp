@@ -34,14 +34,10 @@ public:
     {
         return !(*this >= m);
     }
-
-
-
 } a( 10, 21 ), b(11, 12);
 
 int main()
-{
-   
+{   
     std::cout << "a = "; a.Print(); std::cout<<std::endl;
     std::cout << "b = "; b.Print(); std::cout << std::endl;
     std::cout << "a  " << ((a == b) ? ("=") : ("not =")) << "  b. \n";
@@ -50,5 +46,4 @@ int main()
     std::cout << "a  " << ((a > b) ? (">") : ("not >")) << "  b. \n";
     std::cout << "a  " << ((a <=  b) ? ("<=") : ("not <=")) << "  b. \n";
     std::cout << "a  " << ((a >= b) ? (">=") : ("not >=")) << "  b. \n";
-
 }
