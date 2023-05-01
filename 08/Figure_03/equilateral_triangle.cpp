@@ -13,5 +13,8 @@ equilateral_triangle::equilateral_triangle() : triangle("Равноcторонний треуголь
 }
 bool equilateral_triangle::ff_l()
 {
-	return (a == b && A == B) || (a == c && A == C) || (b == c && B == C);
+
+	if ((a == b && A == B) || (a == c && A == C) || (b == c && B == C))
+		return true;
+	else throw std::exception("Неправильная фигура");
 }

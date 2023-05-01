@@ -9,5 +9,7 @@ rectangle::rectangle() : quadrangle("Прямоугольник")
 }
 bool rectangle::ff_l()
 {
-	return (A == 90 && a == c && b == d && B == 90 && C == 90 && D == 90);
+	if (A == 90 && a == c && b == d && B == 90 && C == 90 && D == 90)
+		return true;
+	else throw std::exception("Неправильная фигура");
 }

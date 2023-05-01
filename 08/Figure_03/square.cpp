@@ -9,5 +9,8 @@ square::square() : quadrangle("Квадрат")
 }
 bool square::ff_l()
 {
-	return (A == 90 && D == 90 && a == c && b == c && d == c && B == 90 && C == 90);
+	
+	if (A == 90 && D == 90 && a == c && b == c && d == c && B == 90 && C == 90)
+		return true;
+	else throw std::exception("Неправильная фигура");
 }

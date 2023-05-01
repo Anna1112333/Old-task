@@ -9,5 +9,7 @@ rhomb::rhomb() : quadrangle("Ромб")
 }
 bool rhomb::ff_l()
 {
-	return (A == C && a == c && b == c && d == c && B == D);
+	if (A == C && a == c && b == c && d == c && B == D)
+		return true;
+	else throw std::exception("Неправильная фигура");
 }

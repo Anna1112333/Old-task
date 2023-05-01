@@ -4,10 +4,13 @@ using namespace std;
 
 parallelogram::parallelogram() : quadrangle("Параллелограмм")
 {
-	a = 14;  b = 20;  c = 14; d = 20;
+	a = 14;  b = 20;  c = 14; d = 21;
 	A = 45;  B = 135;  C = 45; D = 135;	
 }
 bool parallelogram::ff_l()
 {
-	return (A == C && a == c && b == d && B == D);
+	
+	if (A == C && a == c && b == d && B ==D )
+		return true;
+	else throw std::exception("Неправильная фигура");
 }

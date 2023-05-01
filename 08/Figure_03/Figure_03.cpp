@@ -40,6 +40,6 @@ int main()
 		j3.print_info();
 		j4.print_info();
 	}
-	catch (...) { std::cout << "Неправильная фигура" << endl; }
+	catch (std::exception& m) { std::cout<< m.what()<<std::endl; }
 	return 0;
 }

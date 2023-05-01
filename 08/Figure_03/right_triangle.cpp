@@ -10,5 +10,8 @@ right_triangle::right_triangle() : triangle("Прямоугольный треугольник")
 }
 bool right_triangle::ff_l()
 {
-	return (A == 90 || B == 90 || C == 90);
+	
+	if (A == 90 || B == 90 || C == 90)
+		return true;
+	else throw std::exception("Неправильная фигура");
 }
