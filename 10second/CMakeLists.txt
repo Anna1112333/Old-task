@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(cmake_demo01)
+add_executable(cm_task02.exe
+figure_03.cpp 
+isosceles_triangle.h
+equilateral_triangle.h
+right_triangle.h
+rectangle.h
+square.h
+parallelogram.h
+rhomb.h
+triangle.h
+quadrangle.h
+isosceles_triangle.cpp
+equilateral_triangle.cpp
+right_triangle.cpp
+rectangle.cpp
+square.cpp
+parallelogram.cpp
+rhomb.cpp
+triangle.cpp
+quadrangle.cpp
+Source_figure.cpp) 
