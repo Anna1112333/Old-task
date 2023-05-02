@@ -46,16 +46,16 @@ public:
     {
         int no = (nominator_) + (denominator_);
         int de = (denominator_);
-        Fraction tempr(no, de);
-        return tempr;
+        //Fraction tempr(no, de);
+        return *this;
     }
 
     Fraction operator--(int)
     {
         int no = (nominator_)-(denominator_);
         int de = (denominator_);
-        Fraction tempr(no, de);
-        return tempr;
+        //Fraction tempr(no, de);
+        return *this;
     }
     Fraction operator++()
     {
