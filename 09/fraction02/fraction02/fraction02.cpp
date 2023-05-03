@@ -44,14 +44,20 @@ public:
 
     Fraction operator++(int)
     {
+        int no =nominator_;
+        int de =denominator_;
+        Fraction tempr(no, de);
         nominator_ = nominator_ + denominator_;
-        return *this;
+        return tempr;
     }
 
     Fraction operator--(int)
     {
-        nominator_ = nominator_ - denominator_;
-        return *this;
+        int no = nominator_;
+        int de = denominator_;
+        Fraction tempr(no, de);
+        nominator_ = nominator_- denominator_;
+        return tempr;
     }
     Fraction operator++()
     {
@@ -103,4 +109,18 @@ int main()
     std::cout << "Значение дроби1 а-- равно: "; (a--).Print(); std::cout << " \n";
     std::cout << "Значение дроби1 ++а равно: "; (++a).Print(); std::cout << " \n";
     std::cout << "Значение дроби1 --а равно: "; (--a).Print(); std::cout << " \n";
+    {
+        Fraction fx1(3, 7);
+        Fraction fx2 = ++fx1;
+        std::cout << "fx1="; fx1.Print(); std::cout << " \n";
+        std::cout << "fx2="; fx2.Print(); std::cout << " \n";
+        //fx1 и fx2 теперь должны быть оба 10/7
+    }
+    {
+        Fraction fx1(3, 7);
+        Fraction fx2 = fx1++;
+        std::cout << "fx1="; fx1.Print(); std::cout << " \n";
+        std::cout << "fx2="; fx2.Print(); std::cout << " \n";
+        //fx1 теперь должен быть 10/7, а fx2 должен остаться 3/7
+    }
 }
