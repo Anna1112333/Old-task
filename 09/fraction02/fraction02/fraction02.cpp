@@ -44,33 +44,25 @@ public:
 
     Fraction operator++(int)
     {
-        int no = (nominator_) + (denominator_);
-        int de = (denominator_);
-        //Fraction tempr(no, de);
+        nominator_ = nominator_ + denominator_;
         return *this;
     }
 
     Fraction operator--(int)
     {
-        int no = (nominator_)-(denominator_);
-        int de = (denominator_);
-        //Fraction tempr(no, de);
+        nominator_ = nominator_ - denominator_;
         return *this;
     }
     Fraction operator++()
     {
-        int no = (nominator_)+(denominator_);
-        int de = (denominator_);
-        Fraction tempr(no, de);
-        return tempr;
+        nominator_ = nominator_ + denominator_;
+        return *this;
     }
 
     Fraction operator--()
     {
-        int no = (nominator_)-(denominator_);
-        int de = (denominator_);
-        Fraction tempr(no, de);
-        return tempr;
+        nominator_ = nominator_ - denominator_;
+        return *this;        
     }
    
     //Сокращение дроби
