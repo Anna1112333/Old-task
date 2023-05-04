@@ -16,9 +16,11 @@ int function(string str, int function_length)
 
 int main()
 {
-    int length=8, b=0;
-    string a;
-    setlocale(LC_ALL, "RUS");
+setlocale(LC_ALL, "RUS");
+    int length, b=0;
+    cout << "Введите запретную длину слова:";
+    cin >> length;
+    string a;    
     try {
         do {
             cout << "Введите слово:   ";

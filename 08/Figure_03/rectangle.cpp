@@ -6,6 +6,7 @@ rectangle::rectangle() : quadrangle("Прямоугольник")
 {
 	a = 14;  b = 20;  c = 14; d = 20;
 	A = B = C = D = 90;	
+	ff_l();
 }
 bool rectangle::ff_l()
 {

@@ -4,6 +4,7 @@ using namespace std;
 
 parallelogram::parallelogram() : quadrangle("ֿאנאככוכמדנאלל")
 {
+	ff_l();
 	a = 14;  b = 20;  c = 14; d = 21;
 	A = 45;  B = 135;  C = 45; D = 135;	
 }

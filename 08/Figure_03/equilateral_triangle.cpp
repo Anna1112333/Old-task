@@ -10,6 +10,7 @@ void equilateral_triangle::set_1()
 equilateral_triangle::equilateral_triangle() : triangle("Равноcторонний треугольник")
 {
 	set_1();
+	ff_l();
 }
 bool equilateral_triangle::ff_l()
 {

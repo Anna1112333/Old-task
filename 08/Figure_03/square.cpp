@@ -6,6 +6,7 @@ square::square() : quadrangle(" вадрат")
 {
 	a = b = c = d = 20;
 	A = B = C = D = 90;
+	ff_l();
 }
 bool square::ff_l()
 {

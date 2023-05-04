@@ -16,6 +16,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "rus");
+try {
 	isosceles_triangle d1;
 	figure& q1 = d1;
 	equilateral_triangle d2;
@@ -31,7 +32,7 @@ int main()
 	figure& j3 = n3;
 	rhomb n4;
 	figure& j4 = n4;
-	try {
+	
 		q1.print_info();
 		q2.print_info();
 		q3.print_info();
